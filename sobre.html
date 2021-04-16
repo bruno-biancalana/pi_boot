@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        #mapa {
+          height:300px ;
+          width:cover;
+        }
+      </style>
+    <title>PI FAM 4º SEM</title>
+  </head>
+  <body>
+    <div class="card">
+        <div class="card-header">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary"><a href="index.html">HOME</a></button>
+                <button type="button" class="btn btn-secondary"><a href="sobre.html">SOBRE</a></button>
+                <button type="button" class="btn btn-secondary"><a href="contato.html">CONTATO</a></button>
+              </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="titulo"><h1>SOBRE NÓS</h1></div>
+        <div class="textosobre"><p>&nbsp;&nbsp;&nbsp;A <u>BML Solutions</u> é uma empresa de sociedade limitada criada
+            pelos estudantes Bruno, Fernando, Carlos e Luis, que atua no Brasil e vende soluções de 
+            software com os objetivos de minimizar os impactos ambientais causados pela humanidade e 
+            facilitar a vida do usuário. A empresa possui sede em São Paulo-SP, na Rua Augusta
+            nº 791, bairro Consolação</p></div>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="A missão da BML Solutions é..." data-placement="top" data-content="Desenvolver soluções simples de software para problemas antigos, facilitando a vida do usuário e contribuindo para a preservação do meio ambiente">
+                Missão
+              </button>
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="Os valores da BML Solutions são..." data-placement="top" data-content="Tratar todos os clientes e funcionários de maneira igualitária, contribuindo para uma sociedade mais inclusiva,aliado ao desenvolvimento sustentável, característica mais forte da empresa">
+                Valores
+              </button>
+              <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" title="A visão da BML Solutions é..." data-placement="top" data-content=" Ser referência em soluções de software de baixo custo, benéficas ao meio ambiente e agradáveis aos usuários.">
+                Visão
+              </button>
+              <div id="mapa" ></div>
+    <script>
+
+      function inicializar() {
+        var coordenadas = {lat: -23.556673, lng: -46.659000};
+
+        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+          zoom: 15,
+          center: coordenadas 
+        });
+
+        var marker = new google.maps.Marker({
+          position: coordenadas,
+          map: mapa,
+          title: 'Meu marcador'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAgQubMI4Ql7mdcLg2HUWGP36D9LlcJfM&callback=inicializar">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5511953656061?text=Olá!%20Gostei%20do%20seu%20produto" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+</body>
+</html>

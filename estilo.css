@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+.btn-group{
+    float: right;
+}
+.btn-group button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    float: right;
+    background-color: orange;  
+    border-color: orange;
+}
+.btn-group button a {
+    text-decoration: none;
+    color: white;
+}
+.btn-group button:hover{
+    background-color: orangered;
+}
+
+body .card-header{
+    background-color: orange;
+}
+
+.container .titulo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .textosobre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify
+}   
+.container button{
+    background-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1%;
+    margin-left: 18%;
+}
+.container button:hover{
+    background-color: orangered;
+}
+.container .textoindex {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify
+
+}
+.container img{
+    border-radius: 50%;
+}
+
